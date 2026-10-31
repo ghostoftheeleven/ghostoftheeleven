@@ -5,7 +5,7 @@
 <br/>
 
 <a href="https://github.com/ghostoftheeleven?tab=followers"><img src="https://img.shields.io/github/followers/ghostoftheeleven?style=for-the-badge&logo=github&logoColor=white&labelColor=0b0f1e&color=7c5cff" alt="Followers" /></a>
-<a href="https://github.com/ghostoftheeleven?tab=repositories"><img src="https://img.shields.io/badge/Repos-3-22d3ee?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=0b0f1e" alt="Repos" /></a>
+<a href="https://github.com/ghostoftheeleven?tab=repositories"><img src="https://img.shields.io/badge/Repos-4-22d3ee?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=0b0f1e" alt="Repos" /></a>
 <a href="https://github.com/ghostoftheeleven?tab=stars"><img src="https://img.shields.io/badge/Stars-4-f472b6?style=for-the-badge&logo=starship&logoColor=white&labelColor=0b0f1e" alt="Stars" /></a>
 <a href="https://t.me/flspeedy"><img src="https://img.shields.io/badge/Telegram-@flspeedy-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0b0f1e" alt="Telegram" /></a>
 
