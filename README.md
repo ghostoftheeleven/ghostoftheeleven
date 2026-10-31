@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/header.svg" alt="Speedy — ghostoftheeleven" width="100%" />
+<img src="./assets/header.svg?v=2" alt="Speedy — ghostoftheeleven" width="100%" />
 
 <br/>
 

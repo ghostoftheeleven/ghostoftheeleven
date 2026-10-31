@@ -83,7 +83,7 @@ function badge({ label, value, color, icon }) {
     <clipPath id="c"><rect width="${w}" height="28" rx="6"/></clipPath>
   </defs>
   <g clip-path="url(#c)">
-    <rect width="${lw}" height="28" fill="#0b0f1e"/>
+    <rect width="${lw}" height="28" fill="#1a2040"/>
     <rect x="${lw}" width="${vw}" height="28" fill="${color}"/>
     <rect x="-40" width="40" height="28" fill="url(#sheen)" transform="skewX(-20)">
       <animate attributeName="x" values="-60;${w + 40};${w + 40}" keyTimes="0;0.4;1" dur="5s" repeatCount="indefinite"/>
