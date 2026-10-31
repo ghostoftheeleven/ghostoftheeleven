@@ -4,10 +4,14 @@
 
 <br/>
 
-<a href="https://github.com/ghostoftheeleven?tab=followers"><img src="https://img.shields.io/github/followers/ghostoftheeleven?style=for-the-badge&logo=github&logoColor=white&labelColor=0b0f1e&color=7c5cff" alt="Followers" /></a>
-<a href="https://github.com/ghostoftheeleven?tab=repositories"><img src="https://img.shields.io/badge/Repos-4-22d3ee?style=for-the-badge&logo=gitbook&logoColor=white&labelColor=0b0f1e" alt="Repos" /></a>
-<a href="https://github.com/ghostoftheeleven?tab=stars"><img src="https://img.shields.io/badge/Stars-4-f472b6?style=for-the-badge&logo=starship&logoColor=white&labelColor=0b0f1e" alt="Stars" /></a>
-<a href="https://t.me/flspeedy"><img src="https://img.shields.io/badge/Telegram-@flspeedy-26A5E4?style=for-the-badge&logo=telegram&logoColor=white&labelColor=0b0f1e" alt="Telegram" /></a>
+<a href="https://github.com/ghostoftheeleven?tab=followers"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/badge-followers.svg" alt="Followers" height="28" /></a>
+<a href="https://github.com/ghostoftheeleven?tab=repositories"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/badge-repos.svg" alt="Repos" height="28" /></a>
+<a href="https://github.com/ghostoftheeleven?tab=stars"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/badge-starred.svg" alt="Starred" height="28" /></a>
+<a href="https://t.me/flspeedy"><img src="https://img.shields.io/badge/TELEGRAM-@flspeedy-26A5E4?style=flat-square&logo=telegram&logoColor=white&labelColor=0b0f1e" alt="Telegram" height="28" /></a>
+
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/ticker.svg" alt="" width="100%" />
 
 </div>
 
@@ -17,14 +21,30 @@
 
 ```ts
 const speedy = {
-  nickname: "ghostoftheeleven",
-  loves:    ["Call of Duty", "быстрые решения", "чистый код"],
-  net_worth: "billionaire (по версии моего воображения)",
+  nickname:   "ghostoftheeleven",
+  team:       "Team Ph4r0s 🛡",
+  loves:      ["Call of Duty", "быстрые решения", "чистый код"],
   chats_with: "нейросетями — постоянно",
-  stack:    ["Kotlin", "TypeScript", "Rust", "Docker"],
-  motto:    "Move fast, ship things, stay spooky.",
+  stack:      ["Kotlin", "TypeScript", "Rust", "Docker"],
+  motto:      "Move fast, ship things, stay spooky.",
 };
 ```
+
+<br/>
+
+## 🛡 Команда
+
+<table>
+  <tr>
+    <td width="96" align="center">
+      <a href="https://github.com/team-ph4r0s"><img src="https://avatars.githubusercontent.com/u/350356249?v=4&s=160" width="72" height="72" alt="Team Ph4r0s" /></a>
+    </td>
+    <td>
+      <b>Участник <a href="https://github.com/team-ph4r0s">Team Ph4r0s</a></b><br/>
+      Разрабатываем вместе — например, <a href="https://github.com/team-ph4r0s/dementia-panel"><code>dementia-panel</code></a>, панель управления серверами AmneziaWG.
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -42,23 +62,17 @@ const speedy = {
 
 <div align="center">
 
-<a href="https://github.com/tonykolomeytsev/mpeiapp">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ghostoftheeleven&repo=mpei-next&theme=tokyonight&hide_border=true&border_radius=16" alt="mpei-next" />
-</a>
-<a href="https://github.com/team-ph4r0s/dementia-panel">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=team-ph4r0s&repo=dementia-panel&theme=tokyonight&hide_border=true&border_radius=16" alt="dementia-panel" />
-</a>
-<a href="https://github.com/Johnny-Wickky/arca">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=Johnny-Wickky&repo=arca&theme=tokyonight&hide_border=true&border_radius=16" alt="arca" />
-</a>
+<img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/projects.svg" alt="Проекты" width="100%" />
 
 </div>
 
+<br/>
+
 | Проект | Что это | Язык |
 | :-- | :-- | :-: |
-| 🎓 **mpei-next** | Расписание пар, карта корпусов и личный кабинет БАРС для студентов и преподавателей НИУ МЭИ | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
-| 🛡 **dementia-panel** | Agentless-ПО для управления серверами AmneziaWG: деплой в Docker по SSH, мониторинг, учёт пользователей, автообновляемые конфиги | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-| 🔐 **arca** | Параноидально безопасный FOSS-пакет для iOS/Android: Office, Visio 3D и Access в изолированной Wasm-песочнице на Rust | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
+| 🎓 [**mpei-next**](https://github.com/ghostoftheeleven/mpei-next) | Расписание пар, карта корпусов и личный кабинет БАРС для студентов и преподавателей НИУ МЭИ | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
+| 🛡 [**dementia-panel**](https://github.com/team-ph4r0s/dementia-panel) | Agentless-ПО для управления серверами AmneziaWG: деплой в Docker по SSH, мониторинг, учёт пользователей, автообновляемые конфиги | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+| 🔐 [**arca**](https://github.com/Johnny-Wickky/arca) | Параноидально безопасный FOSS-пакет для iOS/Android: Office, Visio 3D и Access в изолированной Wasm-песочнице на Rust | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
 
 <br/>
 
@@ -66,10 +80,13 @@ const speedy = {
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=ghostoftheeleven&show_icons=true&theme=tokyonight&hide_border=true&border_radius=16&rank_icon=github" alt="GitHub stats" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ghostoftheeleven&layout=compact&theme=tokyonight&hide_border=true&border_radius=16&langs_count=6" alt="Top languages" />
+<img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/stats.svg" alt="GitHub stats" width="100%" />
 
-<br/>
+<br/><br/>
+
+<img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/langs.svg" alt="Languages" width="80%" />
+
+<br/><br/>
 
 <img src="https://streak-stats.demolab.com?user=ghostoftheeleven&theme=tokyonight&hide_border=true&border_radius=16" alt="Streak" />
 
@@ -105,7 +122,6 @@ const speedy = {
 
 - 🔫 Call of Duty — основной способ перезагрузить мозг
 - 🤖 Долгие разговоры с нейросетями — от идей до рефакторинга
-- 💸 Мечтаю о миллиардах, пока что коплю коммиты
 
 <br/>
 
@@ -113,6 +129,6 @@ const speedy = {
 
 <img src="./assets/footer.svg" alt="" width="100%" />
 
-<sub>Спасибо, что заглянули 👻 · Обновлено вручную с любовью</sub>
+<sub>Спасибо, что заглянули 👻 · Статистика обновляется автоматически</sub>
 
 </div>

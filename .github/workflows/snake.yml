@@ -1,11 +1,14 @@
-name: Generate snake
+name: Update profile
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
   push:
     branches: [main]
+    paths:
+      - ".github/workflows/**"
+      - "scripts/**"
 
 permissions:
   contents: write
@@ -16,6 +19,17 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generate stats, badges, cards
+        run: node scripts/generate.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+          OUT_DIR: dist
 
       - uses: Platane/snk/svg-only@v3
         with:
