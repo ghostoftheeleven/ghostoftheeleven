@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0f1e"/>
+      <stop offset="0.55" stop-color="#14112b"/>
+      <stop offset="1" stop-color="#0a1a2a"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8ab4ff"/>
+      <stop offset="0.5" stop-color="#b79cff"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <radialGradient id="g1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="g3" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f472b6" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <clipPath id="round"><rect width="1200" height="320" rx="24"/></clipPath>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#grid)"/>
+
+    <!-- aurora blobs -->
+    <circle r="260" fill="url(#g1)">
+      <animate attributeName="cx" values="200;420;200" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="60;220;60" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="240" fill="url(#g2)">
+      <animate attributeName="cx" values="1000;800;1000" dur="17s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="260;80;260" dur="17s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="200" fill="url(#g3)">
+      <animate attributeName="cx" values="640;900;640" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="300;120;300" dur="20s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- floating particles -->
+    <g fill="#fff">
+      <circle cx="120" cy="70" r="1.6" opacity="0.5"><animate attributeName="cy" values="70;50;70" dur="6s" repeatCount="indefinite"/></circle>
+      <circle cx="330" cy="250" r="1.3" opacity="0.4"><animate attributeName="cy" values="250;230;250" dur="7s" repeatCount="indefinite"/></circle>
+      <circle cx="760" cy="40" r="1.8" opacity="0.5"><animate attributeName="cy" values="40;62;40" dur="8s" repeatCount="indefinite"/></circle>
+      <circle cx="1040" cy="150" r="1.5" opacity="0.45"><animate attributeName="cy" values="150;128;150" dur="5s" repeatCount="indefinite"/></circle>
+      <circle cx="905" cy="270" r="1.2" opacity="0.4"><animate attributeName="cy" values="270;250;270" dur="9s" repeatCount="indefinite"/></circle>
+      <circle cx="560" cy="30" r="1.2" opacity="0.35"><animate attributeName="cy" values="30;48;30" dur="7s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- ghost -->
+    <g transform="translate(150 160)" filter="url(#glow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="0 -8;0 8;0 -8" dur="4.5s" repeatCount="indefinite"/>
+        <path d="M-52 52V-6C-52 -42 -30 -62 0 -62C30 -62 52 -42 52 -6V52L35 38L17.5 52L0 38L-17.5 52L-35 38Z"
+              fill="#ffffff" fill-opacity="0.07" stroke="url(#title)" stroke-width="3" stroke-linejoin="round"/>
+        <ellipse cx="-17" cy="-10" rx="7" ry="10" fill="#ffffff"/>
+        <ellipse cx="17" cy="-10" rx="7" ry="10" fill="#ffffff"/>
+        <ellipse cx="-15" cy="-8" rx="3" ry="4.5" fill="#0b0f1e">
+          <animate attributeName="cx" values="-15;-19;-15" dur="6s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="19" cy="-8" rx="3" ry="4.5" fill="#0b0f1e">
+          <animate attributeName="cx" values="19;15;19" dur="6s" repeatCount="indefinite"/>
+        </ellipse>
+        <path d="M-9 14Q0 22 9 14" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- text -->
+    <text x="270" y="140" font-family="'Segoe UI', 'SF Pro Display', Inter, system-ui, -apple-system, Arial, sans-serif"
+          font-size="78" font-weight="800" letter-spacing="-2" fill="url(#title)">Speedy</text>
+    <text x="274" y="182" font-family="'JetBrains Mono', 'Cascadia Code', 'SF Mono', Consolas, monospace"
+          font-size="22" fill="#9aa4c7" letter-spacing="1">@ghostoftheeleven</text>
+
+    <!-- rotating tagline -->
+    <g font-family="'Segoe UI', 'SF Pro Display', Inter, system-ui, -apple-system, Arial, sans-serif" font-size="26" font-weight="500" fill="#e6e9f5">
+      <text x="274" y="238" opacity="0">CoD lover 🎮
+        <animate attributeName="opacity" values="0;1;1;0;0;0;0;0;0" keyTimes="0;0.04;0.28;0.33;0.4;0.6;0.8;0.95;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="274" y="238" opacity="0">Billionaire 💸
+        <animate attributeName="opacity" values="0;0;0;1;1;0;0;0;0" keyTimes="0;0.3;0.34;0.38;0.6;0.66;0.8;0.95;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+      <text x="274" y="238" opacity="0">Constant interlocutor of neural networks 🧠
+        <animate attributeName="opacity" values="0;0;0;0;0;1;1;0;0" keyTimes="0;0.3;0.5;0.6;0.64;0.7;0.92;0.98;1" dur="12s" repeatCount="indefinite"/>
+      </text>
+    </g>
+    <rect x="274" y="256" width="120" height="3" rx="1.5" fill="url(#title)">
+      <animate attributeName="width" values="40;180;40" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="0.75" y="0.75" width="1198.5" height="318.5" rx="23.25" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5"/>
+  </g>
+</svg>
