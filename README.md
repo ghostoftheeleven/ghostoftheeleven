@@ -70,7 +70,7 @@ const speedy = {
 
 | Проект | Что это | Язык |
 | :-- | :-- | :-: |
-| 🎓 [**mpei-next**](https://github.com/ghostoftheeleven/mpei-next) | Расписание пар, карта корпусов и личный кабинет БАРС для студентов и преподавателей НИУ МЭИ | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
+| 🎓 [**mpei-next**](https://github.com/team-ph4r0s/mpei-next) | Расписание пар, карта корпусов и личный кабинет БАРС для студентов и преподавателей НИУ МЭИ | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
 | 🛡 [**dementia-panel**](https://github.com/team-ph4r0s/dementia-panel) | Agentless-ПО для управления серверами AmneziaWG: деплой в Docker по SSH, мониторинг, учёт пользователей, автообновляемые конфиги | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
 | 🔐 [**arca**](https://github.com/Johnny-Wickky/arca) | Параноидально безопасный FOSS-пакет для iOS/Android: Office, Visio 3D и Access в изолированной Wasm-песочнице на Rust | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
 
