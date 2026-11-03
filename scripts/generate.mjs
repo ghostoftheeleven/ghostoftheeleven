@@ -6,7 +6,7 @@ const USER = process.env.GH_USER || "ghostoftheeleven";
 const TOKEN = process.env.GITHUB_TOKEN;
 const OUT = process.env.OUT_DIR || "dist";
 const SHOWCASE = [
-  "ghostoftheeleven/mpei-next",
+  "team-ph4r0s/mpei-next",
   "team-ph4r0s/dementia-panel",
   "Johnny-Wickky/arca",
 ];
@@ -57,8 +57,10 @@ async function contributions() {
         variables: { u: USER },
       }),
     });
+    if (data.errors || !data.data?.user) throw new Error(JSON.stringify(data.errors || "User not found"));
     return data.data.user.contributionsCollection.contributionCalendar.totalContributions;
-  } catch {
+  } catch (error) {
+    console.warn("Contributions unavailable:", error.message);
     return null;
   }
 }
@@ -103,7 +105,7 @@ function statsCard(items) {
   const tiles = items
     .map((it, i) => {
       const cx = i * tileW + tileW / 2;
-      const ratio = Math.max(0.06, Math.min(1, it.value / it.target));
+      const ratio = it.value == null ? 0 : Math.max(0.06, Math.min(1, it.value / it.target));
       const off = (C * (1 - ratio)).toFixed(1);
       return `
   <g>
@@ -116,7 +118,7 @@ function statsCard(items) {
       <animate attributeName="r" values="46;52;46" dur="3.2s" begin="${i * 0.4}s" repeatCount="indefinite"/>
       <animate attributeName="stroke-opacity" values="0.4;0;0.4" dur="3.2s" begin="${i * 0.4}s" repeatCount="indefinite"/>
     </circle>
-    <text x="${cx}" y="90" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="800" fill="#fff">${esc(fmt(it.value))}</text>
+    <text x="${cx}" y="90" text-anchor="middle" font-family="${FONT}" font-size="26" font-weight="800" fill="#fff">${it.value == null ? "—" : esc(fmt(it.value))}</text>
     <text x="${cx}" y="152" text-anchor="middle" font-family="${MONO}" font-size="12" font-weight="700" letter-spacing="1.5" fill="#9aa4c7">${esc(it.label.toUpperCase())}</text>
   </g>`;
     })
@@ -235,6 +237,31 @@ function projectsCard(repos) {
 }
 
 /* ---------- бегущая строка ---------- */
+function showcaseCard(repo, title, subtitle, featured = false) {
+  const height = featured ? 190 : 150;
+  const accent = featured ? "#5eead4" : "#b79cff";
+  const meta = [repo.language, `★ ${repo.stars}`, `⑂ ${repo.forks}`].filter(Boolean).join("    ·    ");
+  return `
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="${height}" viewBox="0 0 1000 ${height}" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11162e"/><stop offset="1" stop-color="#121126"/></linearGradient>
+    <linearGradient id="line"><stop stop-color="#7c5cff"/><stop offset="1" stop-color="#5eead4"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="998" height="${height - 2}" rx="18" fill="url(#bg)" stroke="${accent}" stroke-opacity=".35"/>
+  <rect x="25" y="23" width="4" height="${height - 46}" rx="2" fill="url(#line)"/>
+  <g transform="translate(58 31)">
+    <path d="M0 28V16a16 16 0 0 1 32 0v12l-6-4-5 4-5-4-5 4-5-4-6 4Z" fill="#b79cff" fill-opacity=".12" stroke="${accent}" stroke-width="1.5"/>
+    <circle cx="11" cy="16" r="2.3" fill="white"/><circle cx="21" cy="16" r="2.3" fill="white"/>
+    <animateTransform attributeName="transform" type="translate" values="58 31;58 27;58 31" dur="4s" repeatCount="indefinite"/>
+  </g>
+  <text x="110" y="53" font-family="${FONT}" font-size="26" font-weight="800" fill="#f6f5ff">${esc(title)}</text>
+  <text x="110" y="80" font-family="${MONO}" font-size="14" fill="${accent}">${esc(repo.full)}</text>
+  <text x="58" y="${featured ? 120 : 112}" font-family="${FONT}" font-size="17" fill="#cbd3ed">${esc(subtitle)}</text>
+  <text x="58" y="${height - 22}" font-family="${MONO}" font-size="14" fill="#a8b7d8">${esc(meta)}</text>
+  <text x="945" y="48" text-anchor="end" font-family="${FONT}" font-size="23" fill="${accent}">↗</text>
+</svg>`;
+}
+
 function ticker() {
   const words = ["KOTLIN", "TYPESCRIPT", "RUST", "DOCKER", "WASM", "CALL OF DUTY", "NEURAL NETWORKS", "SHIP FAST", "STAY SPOOKY"];
   const item = (w) => `${w}   ✦   `;
@@ -266,8 +293,8 @@ await mkdir(OUT, { recursive: true });
 
 const profile = await api(`/users/${USER}`);
 const [starred, ownRepos, contrib] = await Promise.all([
-  paginate(`/users/${USER}/starred`).catch(() => []),
-  paginate(`/users/${USER}/repos?type=owner`).catch(() => []),
+  paginate(`/users/${USER}/starred`),
+  paginate(`/users/${USER}/repos?type=owner`),
   contributions(),
 ]);
 
@@ -277,13 +304,13 @@ await write("badge-starred.svg", badge({ label: "Starred", value: starred.length
 
 const earned = ownRepos.reduce((s, r) => s + r.stargazers_count, 0);
 await write(
-  "stats.svg",
+  "stats-v2.svg",
   statsCard([
     { label: "Followers", value: profile.followers, target: 50, color: "#7c5cff" },
     { label: "Repos", value: profile.public_repos, target: 20, color: "#22d3ee" },
     { label: "Starred", value: starred.length, target: 50, color: "#f472b6" },
-    { label: "Stars earned", value: earned, target: 25, color: "#fbbf24" },
-    { label: "Contributions", value: contrib ?? 0, target: 1000, color: "#5eead4" },
+    { label: "Own repo stars", value: earned, target: 25, color: "#fbbf24" },
+    { label: "Contributions", value: contrib, target: 1000, color: "#5eead4" },
   ])
 );
 
@@ -296,11 +323,15 @@ for (const full of SHOWCASE) {
       stars: r.stargazers_count, forks: r.forks_count, pushed: r.pushed_at, full,
     });
   } catch (e) {
-    console.warn("showcase repo skipped:", full, e.message);
-    showcase.push({ name: full.split("/")[1], owner: full.split("/")[0], fork: false, language: null, stars: 0, forks: 0, pushed: null, full });
+    throw new Error(`Unable to load showcase repo ${full}: ${e.message}`);
   }
 }
 await write("projects.svg", projectsCard(showcase));
+await Promise.all([
+  write("project-mpei.svg", showcaseCard(showcase[0], "MPEI Hub", "Расписание · карта корпусов · личный кабинет БАРС", true)),
+  write("project-ph4r0s.svg", showcaseCard(showcase[1], "dementia-panel", "Управление серверами AmneziaWG · Docker · мониторинг")),
+  write("project-arca.svg", showcaseCard(showcase[2], "Arca", "Безопасный просмотр документов · Rust · WebAssembly")),
+]);
 
 const bytes = {};
 const seen = new Set();
