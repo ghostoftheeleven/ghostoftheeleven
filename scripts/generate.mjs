@@ -238,7 +238,7 @@ function projectsCard(repos) {
 
 /* ---------- бегущая строка ---------- */
 function showcaseCard(repo, title, subtitle, featured = false) {
-  const height = featured ? 190 : 150;
+  const height = featured ? 190 : 170;
   const accent = featured ? "#5eead4" : "#b79cff";
   const meta = [repo.language, `★ ${repo.stars}`, `⑂ ${repo.forks}`].filter(Boolean).join("    ·    ");
   return `
