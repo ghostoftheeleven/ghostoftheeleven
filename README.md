@@ -19,16 +19,11 @@
 
 ## 👻 Обо мне
 
-```ts
-const speedy = {
-  nickname:   "ghostoftheeleven",
-  team:       "Team Ph4r0s 🛡",
-  loves:      ["Call of Duty", "быстрые решения", "чистый код"],
-  chats_with: "нейросетями — постоянно",
-  stack:      ["Kotlin", "TypeScript", "Rust", "Docker"],
-  motto:      "Move fast, ship things, stay spooky.",
-};
-```
+Привет, я **Speedy** — участник [Team Ph4r0s](https://github.com/team-ph4r0s). Работаю над мобильными приложениями и инструментами, люблю Kotlin, Call of Duty и обсуждать идеи с нейросетями.
+
+🎓 Развиваем **MPEI Hub**: расписание, карта корпусов и БАРС для студентов и преподавателей МЭИ.
+
+> Move fast, ship things, stay spooky. 👻
 
 <br/>
 
@@ -60,19 +55,13 @@ const speedy = {
 
 ## 🚀 Проекты
 
-<div align="center">
+<a href="https://github.com/team-ph4r0s/mpei-next"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/project-mpei.svg" alt="MPEI Hub — расписание, карта корпусов и БАРС. Открыть репозиторий." width="100%" /></a>
 
-<img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/projects.svg" alt="Проекты" width="100%" />
+[Репозиторий MPEI Hub](https://github.com/team-ph4r0s/mpei-next) · [Релизы](https://github.com/team-ph4r0s/mpei-next/releases)
 
-</div>
+<a href="https://github.com/team-ph4r0s/dementia-panel"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/project-ph4r0s.svg" alt="dementia-panel — управление серверами AmneziaWG. Открыть репозиторий." width="100%" /></a>
 
-<br/>
-
-| Проект | Что это | Язык |
-| :-- | :-- | :-: |
-| 🎓 [**mpei-next**](https://github.com/team-ph4r0s/mpei-next) | Расписание пар, карта корпусов и личный кабинет БАРС для студентов и преподавателей НИУ МЭИ | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white) |
-| 🛡 [**dementia-panel**](https://github.com/team-ph4r0s/dementia-panel) | Agentless-ПО для управления серверами AmneziaWG: деплой в Docker по SSH, мониторинг, учёт пользователей, автообновляемые конфиги | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
-| 🔐 [**arca**](https://github.com/Johnny-Wickky/arca) | Параноидально безопасный FOSS-пакет для iOS/Android: Office, Visio 3D и Access в изолированной Wasm-песочнице на Rust | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) |
+<a href="https://github.com/Johnny-Wickky/arca"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/project-arca.svg" alt="Arca — безопасный просмотр документов. Открыть репозиторий." width="100%" /></a>
 
 <br/>
 
@@ -80,7 +69,7 @@ const speedy = {
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/stats.svg" alt="GitHub stats" width="100%" />
+<img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/stats-v2.svg" alt="GitHub stats" width="100%" />
 
 <br/><br/>
 
@@ -91,6 +80,10 @@ const speedy = {
 <img src="https://streak-stats.demolab.com?user=ghostoftheeleven&theme=tokyonight&hide_border=true&border_radius=16" alt="Streak" />
 
 </div>
+
+<br/>
+
+<sub>Starred — репозитории, которые я отметил звёздой; Own repo stars — звёзды публичных репозиториев моего аккаунта. Contributions — данные GitHub за последний год на момент обновления; значения могут отличаться от профиля из-за времени обновления и настроек приватности.</sub>
 
 <br/>
 

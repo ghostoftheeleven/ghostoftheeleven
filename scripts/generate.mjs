@@ -303,16 +303,14 @@ await write("badge-repos.svg", badge({ label: "Repos", value: profile.public_rep
 await write("badge-starred.svg", badge({ label: "Starred", value: starred.length, color: "#f472b6", icon: "⭐" }));
 
 const earned = ownRepos.reduce((s, r) => s + r.stargazers_count, 0);
-await write(
-  "stats-v2.svg",
-  statsCard([
+const stats = statsCard([
     { label: "Followers", value: profile.followers, target: 50, color: "#7c5cff" },
     { label: "Repos", value: profile.public_repos, target: 20, color: "#22d3ee" },
     { label: "Starred", value: starred.length, target: 50, color: "#f472b6" },
     { label: "Own repo stars", value: earned, target: 25, color: "#fbbf24" },
     { label: "Contributions", value: contrib, target: 1000, color: "#5eead4" },
-  ])
-);
+  ]);
+await Promise.all([write("stats-v2.svg", stats), write("stats.svg", stats)]);
 
 const showcase = [];
 for (const full of SHOWCASE) {
