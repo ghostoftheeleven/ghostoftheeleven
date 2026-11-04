@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="410" viewBox="0 0 640 410" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="410" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0d1226"/>
+      <stop offset="1" stop-color="#14112b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8ab4ff"/>
+      <stop offset="0.5" stop-color="#b79cff"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="round"><rect width="640" height="410" rx="18"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="640" height="410" fill="url(#bg)"/>
+
+    <!-- title bar -->
+    <rect width="640" height="52" fill="#0b0f1e" fill-opacity="0.7"/>
+    <rect y="52" width="640" height="1" fill="#ffffff" fill-opacity="0.08"/>
+    <circle cx="28" cy="26" r="7" fill="#ff5f57"/>
+    <circle cx="51" cy="26" r="7" fill="#febc2e"/>
+    <circle cx="74" cy="26" r="7" fill="#28c840"/>
+    <text x="360" y="32" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','SF Mono',Consolas,monospace" font-size="17" fill="#7f8ab0">Speedy.kt</text>
+    <rect x="0" y="50" width="100" height="2" fill="url(#accent)">
+      <animate attributeName="x" values="-100;640" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- line numbers -->
+    <g font-family="'JetBrains Mono','Cascadia Code','SF Mono',Consolas,monospace" font-size="17" fill="#3d4566" text-anchor="end">
+      <text x="40" y="100">1</text><text x="40" y="134">2</text><text x="40" y="168">3</text>
+      <text x="40" y="202">4</text><text x="40" y="236">5</text><text x="40" y="270">6</text>
+      <text x="40" y="304">7</text><text x="40" y="338">8</text><text x="40" y="372">9</text>
+    </g>
+    <rect x="52" y="72" width="1" height="316" fill="#ffffff" fill-opacity="0.06"/>
+
+    <!-- код: строки проявляются по очереди; без SMIL текст просто виден целиком.
+         Строки короткие (≤ 41 символа), чтобы на телефоне шрифт оставался читаемым. -->
+    <g font-family="'JetBrains Mono','Cascadia Code','SF Mono',Consolas,monospace" font-size="20" xml:space="preserve">
+      <text x="64" y="100" fill="#6b7699">// Привет! Это я 👋<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.53;1" dur="0.75s" fill="freeze"/></text>
+      <text x="64" y="134"><tspan fill="#b79cff">object</tspan><tspan fill="#f6f5ff" font-weight="700"> Speedy</tspan><tspan fill="#9aa4c7"> : </tspan><tspan fill="#8ab4ff">Developer</tspan><tspan fill="#9aa4c7"> {</tspan><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.7;1" dur="1s" fill="freeze"/></text>
+      <text x="64" y="168"><tspan fill="#b79cff">    val</tspan><tspan fill="#e6e9f5"> team  </tspan><tspan fill="#9aa4c7">= </tspan><tspan fill="#5eead4">"Team Ph4r0s"</tspan><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.76;1" dur="1.25s" fill="freeze"/></text>
+      <text x="64" y="202"><tspan fill="#b79cff">    val</tspan><tspan fill="#e6e9f5"> build </tspan><tspan fill="#9aa4c7">= </tspan><tspan fill="#5eead4">"MPEI Hub"</tspan><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.8;1" dur="1.5s" fill="freeze"/></text>
+      <text x="64" y="236"><tspan fill="#b79cff">    val</tspan><tspan fill="#e6e9f5"> loves </tspan><tspan fill="#9aa4c7">= </tspan><tspan fill="#f472b6">listOf</tspan><tspan fill="#9aa4c7">(</tspan><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.83;1" dur="1.75s" fill="freeze"/></text>
+      <text x="64" y="270"><tspan fill="#5eead4">        "Kotlin"</tspan><tspan fill="#9aa4c7">, </tspan><tspan fill="#5eead4">"TS"</tspan><tspan fill="#9aa4c7">, </tspan><tspan fill="#5eead4">"Rust"</tspan><tspan fill="#9aa4c7">, </tspan><tspan fill="#5eead4">"Docker"</tspan><tspan fill="#9aa4c7">)</tspan><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.85;1" dur="2s" fill="freeze"/></text>
+      <text x="64" y="304"><tspan fill="#b79cff">    val</tspan><tspan fill="#e6e9f5"> chill </tspan><tspan fill="#9aa4c7">= </tspan><tspan fill="#5eead4">"Call of Duty"</tspan><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.87;1" dur="2.25s" fill="freeze"/></text>
+      <text x="64" y="338"><tspan fill="#b79cff">    fun</tspan><tspan fill="#f472b6"> motto</tspan><tspan fill="#9aa4c7">() = </tspan><tspan fill="#fbbf24">"stay spooky 👻"</tspan><animate attributeName="opacity" values="0;0;1" keyTimes="0;0.88;1" dur="2.5s" fill="freeze"/></text>
+      <text x="64" y="372" fill="#9aa4c7">}<animate attributeName="opacity" values="0;0;1" keyTimes="0;0.9;1" dur="2.75s" fill="freeze"/></text>
+    </g>
+
+    <!-- blinking cursor -->
+    <rect x="80" y="356" width="11" height="22" rx="1.5" fill="#5eead4">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- ghost mascot (справа от коротких строк 2–4) -->
+    <g transform="translate(548 160) scale(0.62)">
+      <ellipse cx="0" cy="84" rx="34" ry="5" fill="#000" opacity="0.35">
+        <animate attributeName="rx" values="38;26;38" dur="4.5s" repeatCount="indefinite"/>
+      </ellipse>
+      <circle r="90" fill="url(#halo)">
+        <animate attributeName="r" values="80;96;80" dur="4.5s" repeatCount="indefinite"/>
+      </circle>
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+        <circle cx="78" cy="0" r="4.5" fill="#5eead4" filter="url(#glow)"/>
+      </g>
+      <g filter="url(#glow)">
+        <animateTransform attributeName="transform" type="translate" values="0 -7;0 7;0 -7" dur="4.5s" repeatCount="indefinite"/>
+        <path d="M-46 46V-5C-46 -37 -27 -55 0 -55C27 -55 46 -37 46 -5V46L31 34L15.5 46L0 34L-15.5 46L-31 34Z"
+              fill="#ffffff" fill-opacity="0.08" stroke="url(#accent)" stroke-width="4" stroke-linejoin="round"/>
+        <ellipse cx="-15" cy="-9" rx="6" ry="9" fill="#fff">
+          <animate attributeName="ry" values="9;9;1;9;9" keyTimes="0;0.9;0.93;0.96;1" dur="5s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="15" cy="-9" rx="6" ry="9" fill="#fff">
+          <animate attributeName="ry" values="9;9;1;9;9" keyTimes="0;0.9;0.93;0.96;1" dur="5s" repeatCount="indefinite"/>
+        </ellipse>
+        <ellipse cx="-13" cy="-7" rx="2.6" ry="4" fill="#0b0f1e"/>
+        <ellipse cx="17" cy="-7" rx="2.6" ry="4" fill="#0b0f1e"/>
+        <ellipse cx="-27" cy="9" rx="5" ry="3" fill="#f472b6" opacity="0.35"/>
+        <ellipse cx="27" cy="9" rx="5" ry="3" fill="#f472b6" opacity="0.35"/>
+      </g>
+    </g>
+
+    <rect x="0.75" y="0.75" width="638.5" height="408.5" rx="17.25" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5"/>
+  </g>
+</svg>

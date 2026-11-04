@@ -19,37 +19,34 @@
 
 ## 👻 Обо мне
 
-Привет, я **Speedy** — участник [Team Ph4r0s](https://github.com/team-ph4r0s). Работаю над мобильными приложениями и инструментами, люблю Kotlin, Call of Duty и обсуждать идеи с нейросетями.
+<p align="center">
+  <img src="./assets/about.svg" alt="object Speedy: участник Team Ph4r0s, развивает MPEI Hub, любит Kotlin, TypeScript, Rust и Docker; вне кода — Call of Duty." width="640" />
+</p>
 
-🎓 Развиваем **MPEI Hub**: расписание, карта корпусов и БАРС для студентов и преподавателей МЭИ.
+Привет, я **Speedy** — участник [Team Ph4r0s](https://github.com/team-ph4r0s). Делаю мобильные приложения и инструменты, люблю Kotlin и хорошие идеи, которые доходят до релиза.
 
-> Move fast, ship things, stay spooky. 👻
-
-<br/>
-
-## 🛡 Команда
-
-<table>
-  <tr>
-    <td width="96" align="center">
-      <a href="https://github.com/team-ph4r0s"><img src="https://avatars.githubusercontent.com/u/350356249?v=4&s=160" width="72" height="72" alt="Team Ph4r0s" /></a>
-    </td>
-    <td>
-      <b>Участник <a href="https://github.com/team-ph4r0s">Team Ph4r0s</a></b><br/>
-      Разрабатываем вместе — например, <a href="https://github.com/team-ph4r0s/dementia-panel"><code>dementia-panel</code></a>, панель управления серверами AmneziaWG.
-    </td>
-  </tr>
-</table>
+- 🎓 Развиваю **[MPEI Hub](https://github.com/team-ph4r0s/mpei-next)** — расписание, карта корпусов и БАРС для студентов и преподавателей МЭИ
+- 🛡 Вместе с командой пилю **[dementia-panel](https://github.com/team-ph4r0s/dementia-panel)** — панель управления серверами AmneziaWG
+- 🔫 Перезагружаюсь в Call of Duty, а идеи и рефакторинг обсуждаю с нейросетями
 
 <br/>
 
 ## 🛠 Стек
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=kotlin,ts,rust,docker,androidstudio,git,github,powershell&perline=8&theme=dark" alt="Tech stack" />
-
-</div>
+<table align="center">
+  <tr>
+    <th align="left">📱 Мобайл</th>
+    <td align="center"><img src="https://skillicons.dev/icons?i=kotlin,androidstudio,gradle&theme=dark" alt="Kotlin, Android Studio, Gradle" width="144" /></td>
+  </tr>
+  <tr>
+    <th align="left">⚙️ Языки</th>
+    <td align="center"><img src="https://skillicons.dev/icons?i=ts,rust,nodejs&theme=dark" alt="TypeScript, Rust, Node.js" width="144" /></td>
+  </tr>
+  <tr>
+    <th align="left">🧰 Инфра</th>
+    <td align="center"><img src="https://skillicons.dev/icons?i=docker,linux,git,github,githubactions,powershell&perline=3&theme=dark" alt="Docker, Linux, Git, GitHub, GitHub Actions, PowerShell" width="144" /></td>
+  </tr>
+</table>
 
 <br/>
 
@@ -57,11 +54,27 @@
 
 <a href="https://github.com/team-ph4r0s/mpei-next"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/project-mpei.svg" alt="MPEI Hub — расписание, карта корпусов и БАРС. Открыть репозиторий." width="100%" /></a>
 
-[Репозиторий MPEI Hub](https://github.com/team-ph4r0s/mpei-next) · [Релизы](https://github.com/team-ph4r0s/mpei-next/releases)
+<p align="center"><sub><a href="https://github.com/team-ph4r0s/mpei-next">Репозиторий</a> · <a href="https://github.com/team-ph4r0s/mpei-next/releases">Скачать релиз</a></sub></p>
 
 <a href="https://github.com/team-ph4r0s/dementia-panel"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/project-ph4r0s.svg" alt="dementia-panel — управление серверами AmneziaWG. Открыть репозиторий." width="100%" /></a>
 
 <a href="https://github.com/Johnny-Wickky/arca"><img src="https://raw.githubusercontent.com/ghostoftheeleven/ghostoftheeleven/output/project-arca.svg" alt="Arca — безопасный просмотр документов. Открыть репозиторий." width="100%" /></a>
+
+<br/>
+
+## 🛡 Команда
+
+<table align="center">
+  <tr>
+    <td width="96" align="center">
+      <a href="https://github.com/team-ph4r0s"><img src="https://avatars.githubusercontent.com/u/350356249?v=4&s=160" width="72" height="72" alt="Team Ph4r0s" /></a>
+    </td>
+    <td>
+      <b>Участник <a href="https://github.com/team-ph4r0s">Team Ph4r0s</a></b><br/>
+      <sub>Разрабатываем вместе: MPEI Hub, <a href="https://github.com/team-ph4r0s/dementia-panel"><code>dementia-panel</code></a> и не только.</sub>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
@@ -79,11 +92,11 @@
 
 <img src="https://streak-stats.demolab.com?user=ghostoftheeleven&theme=tokyonight&hide_border=true&border_radius=16" alt="Streak" />
 
-</div>
-
 <br/>
 
-<sub>Starred — репозитории, которые я отметил звёздой; Own repo stars — звёзды публичных репозиториев моего аккаунта. Contributions — данные GitHub за последний год на момент обновления; значения могут отличаться от профиля из-за времени обновления и настроек приватности.</sub>
+<sub><b>Starred</b> — репозитории, отмеченные мной звездой · <b>Own repo stars</b> — звёзды моих публичных репозиториев · <b>Contributions</b> — вклад за последний год.<br/>Цифры обновляются каждые 6 часов и могут немного расходиться с профилем.</sub>
+
+</div>
 
 <br/>
 
@@ -101,27 +114,17 @@
 
 <br/>
 
-## 📬 Связь
-
 <div align="center">
+
+### 📬 Есть идея или вопрос? Пишите
 
 <a href="https://t.me/flspeedy"><img src="https://img.shields.io/badge/Написать_в_Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" /></a>
+<a href="https://github.com/team-ph4r0s"><img src="https://img.shields.io/badge/Team_Ph4r0s-0b0f1e?style=for-the-badge&logo=github&logoColor=white" alt="Team Ph4r0s" /></a>
 
-</div>
-
-<br/>
-
-## 🎮 Вне кода
-
-- 🔫 Call of Duty — основной способ перезагрузить мозг
-- 🤖 Долгие разговоры с нейросетями — от идей до рефакторинга
-
-<br/>
-
-<div align="center">
+<br/><br/>
 
 <img src="./assets/footer.svg" alt="" width="100%" />
 
-<sub>Спасибо, что заглянули 👻 · Статистика обновляется автоматически</sub>
+<sub>Спасибо, что заглянули 👻 · Move fast, ship things, stay spooky</sub>
 
 </div>
