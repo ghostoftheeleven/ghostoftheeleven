@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="170" viewBox="0 0 1000 170" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#11162e"/><stop offset="1" stop-color="#121126"/></linearGradient>
+    <linearGradient id="line"><stop stop-color="#7c5cff"/><stop offset="1" stop-color="#5eead4"/></linearGradient>
+  </defs>
+  <rect x="1" y="1" width="998" height="168" rx="18" fill="url(#bg)" stroke="#b79cff" stroke-opacity=".35"/>
+  <rect x="25" y="23" width="4" height="124" rx="2" fill="url(#line)"/>
+  <g transform="translate(58 31)">
+    <path d="M0 28V16a16 16 0 0 1 32 0v12l-6-4-5 4-5-4-5 4-5-4-6 4Z" fill="#b79cff" fill-opacity=".12" stroke="#b79cff" stroke-width="1.5"/>
+    <circle cx="11" cy="16" r="2.3" fill="white"/><circle cx="21" cy="16" r="2.3" fill="white"/>
+    <animateTransform attributeName="transform" type="translate" values="58 31;58 27;58 31" dur="4s" repeatCount="indefinite"/>
+  </g>
+  <text x="110" y="53" font-family="'Segoe UI','SF Pro Display',Inter,system-ui,-apple-system,Arial,sans-serif" font-size="26" font-weight="800" fill="#f6f5ff">Arca</text>
+  <text x="110" y="80" font-family="'JetBrains Mono','Cascadia Code','SF Mono',Consolas,monospace" font-size="14" fill="#b79cff">Johnny-Wickky/arca</text>
+  <text x="58" y="112" font-family="'Segoe UI','SF Pro Display',Inter,system-ui,-apple-system,Arial,sans-serif" font-size="17" fill="#cbd3ed">Безопасный просмотр документов · Rust · WebAssembly</text>
+  <text x="58" y="148" font-family="'JetBrains Mono','Cascadia Code','SF Mono',Consolas,monospace" font-size="14" fill="#a8b7d8">Rust    ·    ★ 1    ·    ⑂ 0</text>
+  <text x="945" y="48" text-anchor="end" font-family="'Segoe UI','SF Pro Display',Inter,system-ui,-apple-system,Arial,sans-serif" font-size="23" fill="#b79cff">↗</text>
+</svg>
